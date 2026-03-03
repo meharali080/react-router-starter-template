@@ -23,6 +23,9 @@ export function Navbar() {
                         <Link to="/about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
                             About Us
                         </Link>
+                        <Link to="/products" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
+                            Products
+                        </Link>
                         <Link to="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
                             Contact Us
                         </Link>
@@ -62,6 +65,13 @@ export function Navbar() {
                                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-900"
                             >
                                 About Us
+                            </Link>
+                            <Link
+                                to="/products"
+                                onClick={() => setIsOpen(false)}
+                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-900"
+                            >
+                                Products
                             </Link>
                             <Link
                                 to="/contact"
